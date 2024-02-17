@@ -16,45 +16,140 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <EditText
-                android:id="@+id/addTitle"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/title"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:autofillHints="@string/title"
-                android:inputType="text" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/addDescription"
+                <EditText
+                    android:id="@+id/addTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/title"
+                    android:hint="@string/title"
+                    android:inputType="text"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/addDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/desc"
+                    android:hint="@string/desc"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/desc"
-                android:autofillHints="@string/desc"
-                android:textSize="18sp"
-                android:textStyle="italic"
-                android:inputType="text" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Distance"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/editTextText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Depth"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btncolorPink"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorPink" />
+
+                    <Button
+                        android:id="@+id/btncolorBlue"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorBlue" />
+
+                    <Button
+                        android:id="@+id/btncolorLightBlue"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorLightBlue" />
+
+                    <Button
+                        android:id="@+id/btncolorLightBrown"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorLightBrown" />
+
+                    <Button
+                        android:id="@+id/btncolorYellow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/colorYellow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
             <EditText
                 android:id="@+id/addTag"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/tag"
-                android:textSize="18sp"
-                android:textStyle="italic"
                 android:autofillHints="@string/tag"
-                android:inputType="text" />
-
+                android:hint="@string/tag"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:textStyle="italic" />
 
             <Button
                 android:id="@+id/btnAdd"
-                android:background="#f0f0f0"
-                android:layout_marginTop="32dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/save_note"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:background="#f0f0f0"
+                android:text="@string/save_note" />
         </LinearLayout>
 
 

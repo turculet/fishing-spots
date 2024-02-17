@@ -12,7 +12,10 @@ import com.languagexx.simplenotes.R
 import com.languagexx.simplenotes.persistence.Note
 import com.languagexx.simplenotes.util.ViewModelProviderFactory
 import dagger.android.support.DaggerFragment
-import kotlinx.android.synthetic.main.activity_edit.*
+import kotlinx.android.synthetic.main.fragment_edit.btnEdit
+import kotlinx.android.synthetic.main.fragment_edit.editDescription
+import kotlinx.android.synthetic.main.fragment_edit.editTag
+import kotlinx.android.synthetic.main.fragment_edit.editTitle
 import javax.inject.Inject
 
 
